@@ -6,10 +6,14 @@ metadata:
   name: reverseproxy
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: reverseproxy
   template:
     metadata:
       labels:
         service: reverseproxy
+        app.kubernetes.io/name: reverseproxy
     spec:
       containers:
         - image: tatchumnono/simple-reverse-proxy
