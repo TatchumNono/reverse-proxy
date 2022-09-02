@@ -12,7 +12,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-        - image: tatchum/simple-reverse-proxy
+        - image: tatchumnono/simple-reverse-proxy
           name: reverseproxy
           imagePullPolicy: Always
           resources:

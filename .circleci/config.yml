@@ -2,7 +2,7 @@ version: 2.1
 executors:
   docker-publisher:
     environment:
-      IMAGE_NAME: tatchum/simple-reverse-proxy
+      IMAGE_NAME: tatchumnono/simple-reverse-proxy
     docker:
       - image: circleci/buildpack-deps:stretch
 jobs:
